@@ -1,16 +1,93 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Pricing Card</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Card container */
+        .card {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Image */
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Title */
+        .card h1 {
+            font-size: 22px;
+            margin: 15px 0 10px;
+        }
+
+        /* Price */
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Description */
+        .desc {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        /* Button */
+        .card button {
+            padding: 10px 20px;
+            background-color: #2a7ae2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #1d5fbf;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="card">
+
+        <!-- Image -->
+        <img src="https://via.placeholder.com/300x180" alt="Product Image">
+
+        <!-- Title -->
+        <h1>Premium Plan</h1>
+
+        <!-- Pricing -->
+        <p class="price">$49.99 / month</p>
+
+        <!-- Description -->
+        <p class="desc">
+            Get access to all premium features including unlimited usage, priority support, and more.
+        </p>
+
+        <!-- Button -->
+        <button>Buy Now</button>
+
+    </div>
 
 </body>
-
 </html>
